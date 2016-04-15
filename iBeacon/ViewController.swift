@@ -48,12 +48,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
         print("You have entered the beacon region")
-        sendLocalNotificationWithMessage("You have entered the beacon region")
+        sendLocalNotificationWithMessage("I found you!!")
     }
     
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
         print("You have exited the beacon region")
-        sendLocalNotificationWithMessage("You have exited the beacon region")
+        sendLocalNotificationWithMessage("I lost you :(")
     }
 }
 
